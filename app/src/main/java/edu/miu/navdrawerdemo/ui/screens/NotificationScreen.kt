@@ -15,7 +15,7 @@ import androidx.compose.ui.Modifier
 
 @Composable
 fun NotificationScreen(modifier: Modifier = Modifier) {
-    // UI for the home screen
+    // UI for the Notification screen
     Column(
         modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally,

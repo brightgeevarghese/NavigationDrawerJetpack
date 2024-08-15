@@ -82,8 +82,6 @@ fun NavigationDrawerApp() {
         drawerState = drawerState,
         drawerContent = {
             ModalDrawerSheet(
-//                drawerContainerColor = Color.Gray,
-//                drawerContentColor = Color.Red,
                 content = {
                     NavigationBarHeader()
                     Spacer(modifier = Modifier.height(12.dp))

@@ -1,4 +1,4 @@
-package edu.miu.navdrawerdemo
+package edu.miu.navdrawerdemo.ui
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -6,7 +6,6 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.tooling.preview.Preview
-import edu.miu.navdrawerdemo.ui.NavigationDrawerApp
 import edu.miu.navdrawerdemo.ui.theme.NavDrawerDemoTheme
 
 class MainActivity : ComponentActivity() {

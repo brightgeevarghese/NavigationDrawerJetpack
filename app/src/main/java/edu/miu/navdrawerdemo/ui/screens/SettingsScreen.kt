@@ -10,7 +10,7 @@ import androidx.navigation.NavController
 
 @Composable
 fun SettingsScreen(modifier: Modifier = Modifier) {
-    // UI for the home screen
+    // UI for the Settings screen
     Column(
         modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally,
