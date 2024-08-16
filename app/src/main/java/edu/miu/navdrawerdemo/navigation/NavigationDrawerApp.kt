@@ -1,6 +1,5 @@
-package edu.miu.navdrawerdemo.ui
+package edu.miu.navdrawerdemo.navigation
 
-import android.util.Log
 import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
@@ -12,7 +11,6 @@ import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material.icons.outlined.Home
 import androidx.compose.material.icons.outlined.Person
 import androidx.compose.material.icons.outlined.Settings
-import androidx.compose.material3.DrawerDefaults
 import androidx.compose.material3.DrawerValue
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.Icon
@@ -27,7 +25,6 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.graphics.Color
 
 import androidx.compose.ui.unit.dp
 import androidx.navigation.compose.currentBackStackEntryAsState
@@ -35,8 +32,6 @@ import androidx.navigation.compose.rememberNavController
 import edu.miu.navdrawerdemo.ui.components.NavigationDrawerBody
 import edu.miu.navdrawerdemo.ui.components.NavigationBarHeader
 import edu.miu.navdrawerdemo.data.NavigationItem
-import edu.miu.navdrawerdemo.navigation.Screens
-import edu.miu.navdrawerdemo.navigation.SetUpNavGraph
 import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
