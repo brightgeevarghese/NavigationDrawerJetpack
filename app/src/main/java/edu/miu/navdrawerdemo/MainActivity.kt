@@ -1,4 +1,4 @@
-package edu.miu.navdrawerdemo.ui
+package edu.miu.navdrawerdemo
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
