@@ -27,8 +27,8 @@ import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
 
 import androidx.compose.ui.unit.dp
+import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
-import androidx.navigation.compose.rememberNavController
 import edu.miu.navdrawerdemo.ui.components.NavigationDrawerBody
 import edu.miu.navdrawerdemo.ui.components.NavigationBarHeader
 import edu.miu.navdrawerdemo.data.NavigationItem
@@ -36,10 +36,9 @@ import kotlinx.coroutines.launch
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun NavigationDrawerApp() {
+fun NavigationDrawerApp(navController: NavHostController) {
     val drawerState = rememberDrawerState(DrawerValue.Closed)
     val scope = rememberCoroutineScope()
-    val navController = rememberNavController()
 
     //The list of items that will be shown in the drawer
     val navigationItems = listOf(
@@ -81,9 +80,6 @@ fun NavigationDrawerApp() {
                     NavigationBarHeader()
                     Spacer(modifier = Modifier.height(12.dp))
                     NavigationDrawerBody(items = navigationItems, currentRoute = navController.currentDestination?.route) {
-                        if (it.route == Screens.Notification.route) {
-
-                        }
                         navController.navigate(it.route) {
                             popUpTo(Screens.Home.route) {
                                 saveState = true
